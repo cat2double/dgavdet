@@ -1,0 +1,16 @@
+{
+  "name": "dgavdet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "cat2double",
+  "license": "ISC",
+  "engines": {
+    "node": ">18.x"
+  },
+  "dependencies": {
+  }
+}

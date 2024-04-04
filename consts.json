@@ -1,0 +1,46 @@
+{
+   "tpf_screenshots_id": "817875132424912906",
+   "poligon_id": "785156034321842176",
+   "poligon2_id": "906495389862088714",
+   "submitting_pictures": "676425471730122753",
+   "voting": "770342597930778704",
+   "info_battles": "676425251122577414",
+   "best_screenshots": "781503006142365717",
+   "arena_contest": "818886685097197598",
+   "arena_info": "818888878446215239",
+   "Arena": "818885615453470720", 
+   "arena-submitting" : "818887520988954624",
+   "arena-leaderboard"  : "818879996176891975",
+   
+   "VKcommunityId":        "54145755",
+   "TestCommunityId":      "187706588",
+   "PoezdatoCommunityId":  "153545654",
+   "BotCommunityId":       "214802198", 
+
+   "CommunityName" : {
+      "54145755" : "VKcommunityId",
+      "187706588" : "TestCommunityId",
+      "153545654" : "PoezdatoCommunityId",
+      "214802198" : "BotCommunityId" 
+   },
+   
+   "app_server" : "https://cattus2.ru/tf/poll/",
+   "busers" : "https://cattus2.ru/tf/busers/",
+   "app_serverremote" : "https://cattus2.ru/tf/poll/",
+   "app_serverlocal" : "http://localhost/tf/poll/",
+   "remotewww" : "/var/www/domains/ovz4.j30862579.gmzem.vps.myjino.ru/tf/poll/",
+   "botsite" : "http://ovz4.j30862579.gmzem.vps.myjino.ru/",
+   "localwww" : "F:/inetpub/wwwroot/tf/poll/temp/",
+   "mnt_app_server" : "https://mnt.cattus2.ru/",
+
+   "Admins": {
+      "cat2double": "834526110220812329",
+                     
+      "Maksimilian Bario": "685697218635628563",
+      "Lord Raccoon": "266841361276207104",
+      "Kenerol": "315815056573071361"
+   },
+
+   "tz" : "Europe/Moscow"
+   
+}
