@@ -8,7 +8,7 @@ this.mscDate = function ()
 this.randomInt = function (min, max) {
     return min + parseInt(Math.random() * (max - min))
 }
-
+/*
 this.sqlqueryfetch = async function (sql) {
     var param = {
         type: "sqlquery",
@@ -25,7 +25,7 @@ this.sqlqueryfetch = async function (sql) {
     return ret
 }
 
-/*
+
 this.sqlquery = function (sql) {
     sql = encodeURIComponent(sql)
     let query = `${consts.app_server}sql.php?type=sqlquery&sql=${sql}`;
@@ -107,6 +107,7 @@ this.sleep = function (milliseconds) {
         currentDate = Date.now();
     } while (currentDate - date < milliseconds);
 }
+/*
 this.getMNT = function () {
     let n = parseInt(Math.random() * (base.mnt.length))
     let row = base.mnt[n]
@@ -117,3 +118,4 @@ this.getMNT = function () {
     ret.src = `https://mnt.cattus2.ru/${base.mnt[n][1]}/${base.mnt[n][1]}-${k}.jpg`
     return ret
 }
+*/
