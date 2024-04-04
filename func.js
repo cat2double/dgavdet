@@ -1,10 +1,4 @@
-//const { Attachment, AttachmentBuilder }    = require('discord.js');
 const consts = require("./consts.json");
-const base = require("./mnt.json");
-const axios = require('axios');  
-//const fs = require('fs');
-//const path = require('path');
-//const request = require('request');
 
 this.mscDate = function ()
 {
@@ -113,7 +107,6 @@ this.sleep = function (milliseconds) {
         currentDate = Date.now();
     } while (currentDate - date < milliseconds);
 }
-
 this.getMNT = function () {
     let n = parseInt(Math.random() * (base.mnt.length))
     let row = base.mnt[n]
@@ -122,8 +115,5 @@ this.getMNT = function () {
     let ret = new Object()
     ret.title = row[0]
     ret.src = `https://mnt.cattus2.ru/${base.mnt[n][1]}/${base.mnt[n][1]}-${k}.jpg`
-
     return ret
-
-
 }
