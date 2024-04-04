@@ -12,5 +12,6 @@
     "node": ">18.x"
   },
   "dependencies": {
+    "node-schedule": "^2.1.1"
   }
 }
