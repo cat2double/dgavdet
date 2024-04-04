@@ -1,8 +1,12 @@
 {
   "name": "dgavdet",
   "version": "1.0.0",
-  "description": "",
+  "description": "bot dgavdet",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cat2double/dgavdet.git"
+  },
   "scripts": {
     "start": "node index.js"
   },
