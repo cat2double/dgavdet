@@ -2,7 +2,7 @@ const schedule = require("node-schedule")
 const func = require("./func.js");
 const {Global} = require("./global.js");
 const package = require("./package.json");
-
+const {WebSite} = require("./website.js");
 
 global.local = process.env.COMPUTERNAME == "CAT2-D"
 
@@ -27,3 +27,4 @@ schedule.scheduleJob(
         console.log(func.mscDate())
 
     })
+    WebSite.Start()
