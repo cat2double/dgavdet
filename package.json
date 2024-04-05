@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "bot dgavdet",
   "main": "index.js",
+  "vk_version" : "5.199",
+  "prefix" : "z!",
   "repository": {
     "type": "git",
     "url": "https://github.com/cat2double/dgavdet.git"
@@ -13,9 +15,9 @@
   "author": "cat2double",
   "license": "ISC",
   "engines": {
-    "node": ">18.x"
+    "node": "^19.9.0"
   },
   "dependencies": {
-    "node-schedule": "^2.1.1"
+    "node-schedule": "^19.9.0"
   }
 }

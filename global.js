@@ -1,3 +1,3 @@
 global.local = true
-global.prefix = "z!",
+global.prefix
 global.vk_version = "5.199"
