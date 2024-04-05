@@ -4,7 +4,7 @@ const func = require("./func.js");
 const { Global } = require("./global.js");
 const package = require("./package.json");
 const { WebSite } = require("./website.js");
-
+/*
 const { Client,
     IntentsBitField,
     Events,
@@ -24,7 +24,7 @@ const { Client,
     TextInputStyle,
     StringSelectMenuBuilder,
 } = require('discord.js');
-/*
+
 global.robot = new Client({
     intents: [
         IntentsBitField.Flags.GuildMembers,
