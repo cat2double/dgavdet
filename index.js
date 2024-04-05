@@ -2,6 +2,8 @@ const schedule = require("node-schedule")
 const axios = require("axios")
 const func = require("./func.js");
 const { Global } = require("./global.js");
+const fetchP = import('node-fetch').then(mod => mod.default)
+const fetch = (...args) => fetchP.then(fn => fn(...args))
 const package = require("./package.json");
 const { WebSite } = require("./website.js");
 /*
@@ -65,7 +67,7 @@ schedule.scheduleJob(
     async function () {
         console.log(func.mscDate())
 
-        axios.get('https://dgavdet.glitch.me')
+        fetch('https://dgavdet.glitch.me')
             .catch()
 
     })
