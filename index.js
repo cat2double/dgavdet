@@ -1,10 +1,10 @@
 const schedule = require("node-schedule")
-//const axios = require("axios")
+const axios = require("axios")
 const func = require("./func.js");
 const { Global } = require("./global.js");
 const package = require("./package.json");
 const { WebSite } = require("./website.js");
-/*
+
 const { Client,
     IntentsBitField,
     Events,
@@ -25,7 +25,7 @@ const { Client,
     StringSelectMenuBuilder,
 } = require('discord.js');
 
-const robot = new Client({
+global.robot = new Client({
     intents: [
         IntentsBitField.Flags.GuildMembers,
         IntentsBitField.Flags.Guilds,
@@ -40,8 +40,8 @@ const robot = new Client({
     ,
     partials: [Partials.Message, Partials.Channel, Partials.Reaction]
 });
-*/
-global.Robot = robot
+
+//global.Robot = robot
 global.local = process.env.COMPUTERNAME == "CAT2-D"
 
 if (global.local) {
