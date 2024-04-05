@@ -19,7 +19,7 @@ console.log("++++++++ Start ++++++++")
 global.vk_version = package.vk_version;
 global.prefix = package.prefix;
 
-console.log(package.v)
+console.log(package.vk_version)
 
 schedule.scheduleJob(
     { minute: new schedule.Range(0, 55, 5), second: 15, tz: "Europe/Moscow" },
