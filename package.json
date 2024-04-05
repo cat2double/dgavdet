@@ -15,9 +15,9 @@
   "author": "cat2double",
   "license": "ISC",
   "engines": {
-    "node": "^19.9.0"
+    "node": "^20.11.1"
   },
   "dependencies": {
-    "node-schedule": "^19.9.0"
+    "node-schedule": "^2.1.1"
   }
 }
