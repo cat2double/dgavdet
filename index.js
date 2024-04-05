@@ -16,8 +16,6 @@ else {
 }
 console.log("++++++++ Start ++++++++")
 
-console.log(global.token)
-
 schedule.scheduleJob(
     { minute: new schedule.Range(0, 55, 5), second: 15, tz: "Europe/Moscow" },
     async function () {
