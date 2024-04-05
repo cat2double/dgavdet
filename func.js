@@ -2,10 +2,7 @@ const consts = require("./consts.json");
 
 this.mscDate = function ()
 {
-    let formatter = new Intl.DateTimeFormat("ru");
-    let date = new Date()
-    return  formatter.format(date)
-    //return (new Date()).toLocaleString("ru-RU", { timeZone: 'Europe/Moscow' })
+    return (new Date()).toLocaleString("ru-RU", { timeZone: 'Europe/Moscow' })
 }
 
 this.randomInt = function (min, max) {
