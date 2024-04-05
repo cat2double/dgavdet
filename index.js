@@ -1,8 +1,8 @@
 const schedule = require("node-schedule")
 const func = require("./func.js");
 const { Global } = require("./global.js");
-const fetchP = import('node-fetch').then(mod => mod.default)
-const fetch = (...args) => fetchP.then(fn => fn(...args))
+//const fetchP = import('node-fetch').then(mod => mod.default)
+//const fetch = (...args) => fetchP.then(fn => fn(...args))
 const package = require("./package.json");
 const { WebSite } = require("./website.js");
 /*
