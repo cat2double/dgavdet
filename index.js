@@ -46,6 +46,7 @@ global.robot = new Client({
 
 //global.Robot = robot
 */
+
 global.local = process.env.COMPUTERNAME == "CAT2-D"
 
 if (global.local) {
@@ -60,9 +61,7 @@ else {
 console.log("++++++++ Start ++++++++")
 global.vk_version = package.vk_version;
 global.prefix = package.prefix;
-
 console.log(package.vk_version)
-
 schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
