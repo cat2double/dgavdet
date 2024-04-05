@@ -65,10 +65,10 @@ schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
         console.log(func.mscDate())
-
+/*
         fetch('https://dgavdet.glitch.me')
             .catch()
-
+*/
     })
 //robot.login(global.token)
 WebSite.Start()
