@@ -1,5 +1,5 @@
 const schedule = require("node-schedule")
-//const axios = require("axios")
+const axios = require("axios")
 const func = require("./func.js");
 const { Global } = require("./global.js");
 const package = require("./package.json");
@@ -64,10 +64,10 @@ schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
         console.log(func.mscDate())
-        /*
+
         axios.get('https://dgavdet.glitch.me')
             .catch()
-*/
+
     })
 //robot.login(global.token)
 WebSite.Start()
