@@ -24,7 +24,7 @@ const { Client,
     TextInputStyle,
     StringSelectMenuBuilder,
 } = require('discord.js');
-
+/*
 global.robot = new Client({
     intents: [
         IntentsBitField.Flags.GuildMembers,
@@ -42,6 +42,7 @@ global.robot = new Client({
 });
 
 //global.Robot = robot
+*/
 global.local = process.env.COMPUTERNAME == "CAT2-D"
 
 if (global.local) {
@@ -69,4 +70,4 @@ schedule.scheduleJob(
 */
     })
 //robot.login(global.token)
-//WebSite.Start()
+WebSite.Start()
