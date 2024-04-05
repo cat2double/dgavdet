@@ -4,6 +4,7 @@ const func = require("./func.js");
 const { Global } = require("./global.js");
 const package = require("./package.json");
 const { WebSite } = require("./website.js");
+/*
 const { Client,
     IntentsBitField,
     Events,
@@ -39,6 +40,7 @@ const robot = new Client({
     ,
     partials: [Partials.Message, Partials.Channel, Partials.Reaction]
 });
+*/
 global.Robot = robot
 global.local = process.env.COMPUTERNAME == "CAT2-D"
 
@@ -66,5 +68,5 @@ schedule.scheduleJob(
             .catch()
 */
     })
-robot.login(global.token)
+//robot.login(global.token)
 WebSite.Start()
