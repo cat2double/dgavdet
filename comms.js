@@ -1,5 +1,5 @@
-const config = require('./config.json'); // Подключаем файл с параметрами и информацией
-const prefix = config.prefix; // «Вытаскиваем» префикс
+const {Global} = require("./global.js");
+const prefix = global.prefix; // «Вытаскиваем» префикс
 //const fetch = import('node-fetch').then(mod => mod.default)
 //const fetchP = import('node-fetch').then(mod => mod.default)
 //const { Interim } = require('./interim.js');

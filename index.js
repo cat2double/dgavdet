@@ -1,12 +1,12 @@
 const schedule = require("node-schedule")
 const func = require("./func.js");
 const {Global} = require("./global.js");
-const config = require('./config.json'); // Подключаем файл с параметрами и информацией
-const prefix = config.prefix; // «Вытаскиваем» префикс
+
 
 global.local = process.env.COMPUTERNAME == "CAT2-D"
 let token, vk_token
 if (global.local) {
+    const config = require('./config.json'); // Подключаем файл с параметрами и информацией
     token  = config.token 
     vk_token  = config.vk_token
 }
