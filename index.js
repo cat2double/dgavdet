@@ -1,4 +1,5 @@
 const schedule = require("node-schedule")
+const axios = require("axios")
 const func = require("./func.js");
 const { Global } = require("./global.js");
 //const fetchP = import('node-fetch').then(mod => mod.default)
@@ -68,10 +69,10 @@ schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
         console.log(func.mscDate())
-/*
+
         fetch('https://dgavdet.glitch.me')
             .catch()
-*/
+
     })
 //robot.login(global.token)
 WebSite.Start()
