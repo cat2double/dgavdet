@@ -1,5 +1,5 @@
 const schedule = require("node-schedule")
-//const axios = require("axios")
+const http = require("http")
 const func = require("./func.js");
 const { Global } = require("./global.js");
 //const fetchP = import('node-fetch').then(mod => mod.default)
@@ -69,6 +69,18 @@ schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
         console.log(func.mscDate())
+        http.get(
+            {
+                hostname: 'http://dgavdet.glitch.me',
+                /*port: 80,*/
+                path: '/',
+                agent: false, // Создаем нового агента только для этого запроса
+            },
+            (res) => {
+                // Делаем что-нибудь с ответом
+            }
+        );
+        
 /*
         fetch('https://dgavdet.glitch.me')
             .catch()
