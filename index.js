@@ -1,8 +1,9 @@
 const schedule = require("node-schedule")
-//const func = require("./func.js");
-//const { Global } = require("./global.js");
+const func = require("./func.js");
+const { Global } = require("./global.js");
 //const fetchP = import('node-fetch').then(mod => mod.default)
 //const fetch = (...args) => fetchP.then(fn => fn(...args))
+
 const package = require("./package.json");
 const { WebSite } = require("./website.js");
 
@@ -62,6 +63,7 @@ console.log("++++++++ Start ++++++++")
 global.vk_version = package.vk_version;
 global.prefix = package.prefix;
 console.log(package.vk_version)
+
 schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
