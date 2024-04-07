@@ -21,7 +21,7 @@ class WebSite {
 
         app.get("/", (req, res) => res.type('html').send(html));
 
-        const server = app.listen(global.port, () => console.log(`Dgavdet listening on port ${global.port}!`));
+        const server = app.listen(global.port, "0.0.0.0", () => console.log(`Dgavdet listening on port ${global.port}!`));
 
         server.keepAliveTimeout = 120 * 1000;
         server.headersTimeout = 120 * 1000;

@@ -70,10 +70,10 @@ schedule.scheduleJob(
     async function () {
         console.log(func.mscDate())
         if (global.port){
-            /*
+            *
         http.get(
             {
-                hostname: 'http://localhost',
+                hostname: '0.0.0.0',
                 path: '/',
                 port : global.port,
                 //agent: false, // Создаем нового агента только для этого запроса
