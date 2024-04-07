@@ -69,17 +69,18 @@ schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
         console.log(func.mscDate())
+        if (global.port){
         http.get(
             {
                 hostname: 'http://dgavdet.glitch.me',
-                /*port: 80,*/
+                port: global.port,
                 path: '/',
-                agent: false, // Создаем нового агента только для этого запроса
+                //agent: false, // Создаем нового агента только для этого запроса
             },
             (res) => {
                 // Делаем что-нибудь с ответом
             }
-        );
+        );}
         
 /*
         fetch('https://dgavdet.glitch.me')
