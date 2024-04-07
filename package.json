@@ -15,7 +15,7 @@
   "author": "cat2double",
   "license": "ISC",
   "engines": {
-    "node": ">0.0.0"
+    "node": "16.x"
   },
   "dependencies": {
     "bufferutil": "^4.0.8",
