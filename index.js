@@ -70,7 +70,7 @@ schedule.scheduleJob(
     async function () {
         console.log(func.mscDate())
         if (global.port){
-            *
+            
         http.get(
             {
                 hostname: '0.0.0.0',
@@ -82,7 +82,7 @@ schedule.scheduleJob(
                 // Делаем что-нибудь с ответом
             }
         );
-        */
+         
     }
     })
 //robot.login(global.token)
