@@ -65,23 +65,12 @@ global.vk_version = package.vk_version;
 global.prefix = package.prefix;
 console.log(package.vk_version)
 
-http.get(
-    {
-        hostname: 'http://localhost',
-        path: '/',
-        port : global.port,
-        //agent: false, // Создаем нового агента только для этого запроса
-    },
-    (res) => {
-        // Делаем что-нибудь с ответом
-    }
-);
-
 schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
         console.log(func.mscDate())
         if (global.port){
+            /*
         http.get(
             {
                 hostname: 'http://localhost',
@@ -92,7 +81,9 @@ schedule.scheduleJob(
             (res) => {
                 // Делаем что-нибудь с ответом
             }
-        );}
+        );
+        */
+    }
     })
 //robot.login(global.token)
 WebSite.Start()
