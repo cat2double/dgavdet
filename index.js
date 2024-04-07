@@ -1,5 +1,5 @@
 const schedule = require("node-schedule")
-const http = require("http")
+const https = require("https")
 const func = require("./func.js");
 const { Global } = require("./global.js");
 //const fetchP = import('node-fetch').then(mod => mod.default)
@@ -65,9 +65,9 @@ global.vk_version = package.vk_version;
 global.prefix = package.prefix;
 console.log(package.vk_version)
 
-http.get(
+https.get(
     {
-        hostname: 'http://dgavdet.glitch.me',
+        hostname: 'https://dgavdet.glitch.me',
         path: '/',
         //agent: false, // Создаем нового агента только для этого запроса
     },
@@ -81,9 +81,9 @@ schedule.scheduleJob(
     async function () {
         console.log(func.mscDate())
         if (global.port){
-        http.get(
+        https.get(
             {
-                hostname: 'http://dgavdet.glitch.me',
+                hostname: 'https://dgavdet.glitch.me',
                 path: '/',
                 //agent: false, // Создаем нового агента только для этого запроса
             },
@@ -91,11 +91,6 @@ schedule.scheduleJob(
                 // Делаем что-нибудь с ответом
             }
         );}
-        
-/*
-        fetch('https://dgavdet.glitch.me')
-            .catch()
-*/
     })
 //robot.login(global.token)
 WebSite.Start()
