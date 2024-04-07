@@ -65,6 +65,17 @@ global.vk_version = package.vk_version;
 global.prefix = package.prefix;
 console.log(package.vk_version)
 
+http.get(
+    {
+        hostname: 'http://dgavdet.glitch.me',
+        path: '/',
+        //agent: false, // Создаем нового агента только для этого запроса
+    },
+    (res) => {
+        // Делаем что-нибудь с ответом
+    }
+);
+
 schedule.scheduleJob(
     { minute: new schedule.Range(0, 56, 4), second: 15, tz: "Europe/Moscow" },
     async function () {
@@ -73,7 +84,6 @@ schedule.scheduleJob(
         http.get(
             {
                 hostname: 'http://dgavdet.glitch.me',
-                port: global.port,
                 path: '/',
                 //agent: false, // Создаем нового агента только для этого запроса
             },
