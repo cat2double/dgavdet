@@ -1,5 +1,5 @@
 const schedule = require("node-schedule")
-const https = require("https")
+const http = require("http")
 const func = require("./func.js");
 const { Global } = require("./global.js");
 //const fetchP = import('node-fetch').then(mod => mod.default)
@@ -65,7 +65,7 @@ global.vk_version = package.vk_version;
 global.prefix = package.prefix;
 console.log(package.vk_version)
 
-https.get(
+http.get(
     {
         hostname: 'http://localhost',
         path: '/',
@@ -82,7 +82,7 @@ schedule.scheduleJob(
     async function () {
         console.log(func.mscDate())
         if (global.port){
-        https.get(
+        http.get(
             {
                 hostname: 'http://localhost',
                 path: '/',

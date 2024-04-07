@@ -21,6 +21,7 @@
     "bufferutil": "^4.0.8",
     "discord.js": "^14.14.1",
     "express": "^4.19.2",
+    "http": "^0.0.1-security",
     "https": "^1.0.0",
     "node-schedule": "^2.1.1",
     "was": "^1.0.31",
