@@ -1,9 +1,7 @@
 const express = require("express");
 const { Global } = require("./global.js");
-
 class WebSite {
     constructor() {
-
     }
     static Start() {
         const html = `
@@ -18,7 +16,6 @@ class WebSite {
     </section>
   </body>
 </html>`
-      
         const app = express();
         global.port = process.env.PORT || 3001;
 
