@@ -69,6 +69,7 @@ https.get(
     {
         hostname: 'https://dgavdet.glitch.me',
         path: '/',
+        port: global.port
         //agent: false, // Создаем нового агента только для этого запроса
     },
     (res) => {
