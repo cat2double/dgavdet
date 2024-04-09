@@ -6,7 +6,7 @@ const { Global } = require("./global.js");
 //const fetch = (...args) => fetchP.then(fn => fn(...args))
 
 const package = require("./package.json");
-const { WebSite } = require("./website.js");
+//const { WebSite } = require("./website.js");
 
 
 /*
@@ -70,20 +70,9 @@ schedule.scheduleJob(
     async function () {
         console.log(func.mscDate())
         if (global.port){
-            
-        http.get(
-            {
-                hostname: '0.0.0.0',
-                path: '/',
-                port : global.port,
-                //agent: false, // Создаем нового агента только для этого запроса
-            },
-            (res) => {
-                // Делаем что-нибудь с ответом
-            }
-        );
+           
          
     }
     })
 //robot.login(global.token)
-WebSite.Start()
+//WebSite.Start()
